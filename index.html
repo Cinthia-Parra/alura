@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encripta</title>
+    <link rel="icon" href="images/icono.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <img id="image__logo" src="images/key.png" alt="logo de pagina">
+        </div>
+            <h1>Encriptador de textos</h1>
+    </header>
+        <main>
+                <form>
+                        <textarea
+                        id="text_encriptar" placeholder="Ingrese el texto aquí" 
+                        minlength="4" maxlength="280" size="280" rows="23" cols="70"></textarea>
+                            <section class="bottoms">
+                                <button id="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                                <button id="des__encriptar" onclick="btnDesEncriptar()">Desencriptar</button>
+                                    <div class="nota">
+                                        <img id="image__importante" src="images/icono__importante1.png" alt="icono consepto de punto importante">
+                                    <p>*solo letras minusculas sin acento*</p>
+                                    </div>
+                        </section>
+                        <aside>
+                            <form>
+                                <textarea
+                                id="text_no_encriptado" placeholder="Nungun mensaje se ha encontrado"
+                                ></textarea>
+                            </form>
+                            <div class="texto_no">
+                                <img id="image__buscador" alt="imagen de ayuda"
+                                src="images/buscador.png" width="300px">
+                            <button id="copiar">copiar</button>
+                            </div>
+                        </aside>
+                </form>
+        </main>
+</body>
+<script src="./scrip.js"></script>
+</html>
+
