@@ -61,7 +61,7 @@ h3 {
 #text_no_encriptado {
         background-color: rgba(240, 248, 255, 0.219);
         background-image: url(./images/buscador.png);
-        background-position: bottom;
+        background-position: 15px 40px;
         background-size: contain;
         background-repeat: no-repeat;
     display: flex start;
