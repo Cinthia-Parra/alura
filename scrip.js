@@ -38,3 +38,29 @@ function btnDesEncriptar() {
     texArea.value = "";
     mensaje.style.backgroundImage = "none";
 }
+
+
+function btnCopiar() {
+    let texto = mensaje;
+    let range = document.createRange();
+        range.selectNodeContents(texto);
+    let selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        navigator.clipboard.writeText(mensaje.value)
+            .then(() => {
+                alert("Texto copiado: " + texto.value);
+            })
+            .catch(err => {
+                console.error("Error al copiar el texto: ", err);
+            });
+}
+
+
+document.getElementById('text_encriptar').addEventListener('input', function(event) {
+        const textarea = event.target;
+        const regex = /[A-ZÁÉÍÓÚÜÑáéíóúüñ1234567890@#$%&*+\-/=]/;
+        if (regex.test(textarea.value)) {
+            alert("favor de solo esribir munusculas, no numeros, letras con acentos ni caracteres especiales");
+        }
+    });

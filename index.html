@@ -20,8 +20,8 @@
                         id="text_encriptar" placeholder="Ingrese el texto aquí" 
                         minlength="4" maxlength="280" size="280" rows="23" cols="70"></textarea>
                             <section class="bottoms">
-                                <button id="encriptar" onclick="btnEncriptar()">Encriptar</button>
-                                <button id="des__encriptar" onclick="btnDesEncriptar()">Desencriptar</button>
+                                <button type="button" id="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                                <button type="button" id="des__encriptar" onclick="btnDesEncriptar()">Desencriptar</button>
                                     <div class="nota">
                                         <img id="image__importante" src="images/icono__importante1.png" alt="icono consepto de punto importante">
                                     <p>*solo letras minusculas sin acento*</p>
@@ -34,9 +34,7 @@
                                 ></textarea>
                             </form>
                             <div class="texto_no">
-                                <img id="image__buscador" alt="imagen de ayuda"
-                                src="images/buscador.png" width="300px">
-                            <button id="copiar">copiar</button>
+                            <button onclick="btnCopiar ()" type="button" id="copiar">copiar</button>
                             </div>
                         </aside>
                 </form>

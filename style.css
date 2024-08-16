@@ -59,13 +59,19 @@ h3 {
 }
 
 #text_no_encriptado {
-    background-color: rgba(240, 248, 255, 0.219);
+        background-color: rgba(240, 248, 255, 0.219);
+        background-image: url(./images/buscador.png);
+        background-position: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
     display: flex start;
     width: 100%;
+    height: 50lvh;
     margin-top: 0%;
     border-style: none;
     border-radius: 7px;
     margin: 2%;
+    margin-top: 0%;
     padding: 20px;
     margin-left: 0%;
     padding-top: 0%;
@@ -92,6 +98,7 @@ h3 {
     width: 100%;
     border-color: rgba(117, 171, 196, 0.658);
     margin-left: 0%;
+    margin: 0%;
 }
 h2 {
     font-size:medium;
@@ -102,7 +109,7 @@ h2 {
 .texto_no {
     text-align: center;
     width: 100%;
-    padding: 20px;
+    padding: 0 20px;
 
 }
 
