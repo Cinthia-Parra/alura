@@ -64,3 +64,6 @@ document.getElementById('text_encriptar').addEventListener('input', function(eve
             alert("favor de solo esribir munusculas, no numeros, letras con acentos ni caracteres especiales");
         }
     });
+
+
+/*responsive*/
